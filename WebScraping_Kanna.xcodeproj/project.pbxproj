@@ -12,9 +12,11 @@
 		69246EBB2186AED30002783B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69246EB92186AED30002783B /* Main.storyboard */; };
 		69246EBD2186AED30002783B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69246EBC2186AED30002783B /* Assets.xcassets */; };
 		69246EC02186AED30002783B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69246EBE2186AED30002783B /* LaunchScreen.storyboard */; };
+		B51C0392545116E607E93CAC /* Pods_WebScraping_Kanna.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20488ACBF3EE557744EE7D1 /* Pods_WebScraping_Kanna.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C84A30F79D98ABA29FC1ED5 /* Pods-WebScraping_Kanna.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebScraping_Kanna.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebScraping_Kanna/Pods-WebScraping_Kanna.debug.xcconfig"; sourceTree = "<group>"; };
 		69246EB22186AED30002783B /* WebScraping_Kanna.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebScraping_Kanna.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69246EB52186AED30002783B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69246EB72186AED30002783B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		69246EBC2186AED30002783B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69246EBF2186AED30002783B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69246EC12186AED30002783B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B20488ACBF3EE557744EE7D1 /* Pods_WebScraping_Kanna.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebScraping_Kanna.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E53EBEEDABB17356DC4DEEB0 /* Pods-WebScraping_Kanna.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebScraping_Kanna.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebScraping_Kanna/Pods-WebScraping_Kanna.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B51C0392545116E607E93CAC /* Pods_WebScraping_Kanna.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2FB71227B578BECBB251C9EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C84A30F79D98ABA29FC1ED5 /* Pods-WebScraping_Kanna.debug.xcconfig */,
+				E53EBEEDABB17356DC4DEEB0 /* Pods-WebScraping_Kanna.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		61441C45497AACDE1602DDEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B20488ACBF3EE557744EE7D1 /* Pods_WebScraping_Kanna.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		69246EA92186AED30002783B = {
 			isa = PBXGroup;
 			children = (
 				69246EB42186AED30002783B /* WebScraping_Kanna */,
 				69246EB32186AED30002783B /* Products */,
+				2FB71227B578BECBB251C9EA /* Pods */,
+				61441C45497AACDE1602DDEA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 69246EC42186AED30002783B /* Build configuration list for PBXNativeTarget "WebScraping_Kanna" */;
 			buildPhases = (
+				D7A064A82E75E37FDF0EC3E2 /* [CP] Check Pods Manifest.lock */,
 				69246EAE2186AED30002783B /* Sources */,
 				69246EAF2186AED30002783B /* Frameworks */,
 				69246EB02186AED30002783B /* Resources */,
+				31ED84474F8D593C6B20DF41 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31ED84474F8D593C6B20DF41 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WebScraping_Kanna/Pods-WebScraping_Kanna-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kanna/Kanna.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kanna.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WebScraping_Kanna/Pods-WebScraping_Kanna-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7A064A82E75E37FDF0EC3E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WebScraping_Kanna-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		69246EAE2186AED30002783B /* Sources */ = {
@@ -280,6 +347,7 @@
 		};
 		69246EC52186AED30002783B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C84A30F79D98ABA29FC1ED5 /* Pods-WebScraping_Kanna.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +365,7 @@
 		};
 		69246EC62186AED30002783B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E53EBEEDABB17356DC4DEEB0 /* Pods-WebScraping_Kanna.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
